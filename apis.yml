@@ -1,7 +1,23 @@
 aid: mommazoo
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/mommazoo.png
 name: MommaZoo
-description: MommaZoo is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: MommaZoo was a mobile web application for parent-teacher and school-community communication,
+  surfaced as a portfolio company of 500 Global and added to the API Evangelist network as a stub for
+  enrichment. Built as an HTML5 cross-platform app, it let parents and teachers centralize class posts,
+  homework, sign-ups, reminders, documents, and multi-channel messaging across devices and languages.
+  The company is defunct - public activity ends around 2013 and the mommazoo.com domain is now parked -
+  and an enrichment pass found no developer portal, documentation, or public API surface.
 url: https://raw.githubusercontent.com/api-evangelist/mommazoo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +27,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Education
+- EdTech
+- Parent Communication
+- School Communication
+- Messaging
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,4 +44,15 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://blockcypher.com
+  url: https://mommazoo.com
+- type: Blog
+  url: https://mommazoo.wordpress.com/
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
+x-status: defunct
+x-notes: Company defunct (public activity ends ~2013); mommazoo.com is a parked domain
+  with no API, developer portal, or documentation. No api.* / developer.* / app.*
+  subdomains resolve. No artifacts to enrich.
